@@ -1,35 +1,35 @@
 <br>
 
 <div align="center">
-  <a href="https://github.com/the-1Riddle/EmpowerHer">
-    <img src="https://github.com/the-1Riddle/EmpowerHer/assets/125451537/4e3ca369-3649-4bdf-8af2-bab7847a11ad" height="100px" />
+  <a href="https://github.com/the-1Riddle/EmpowerH">
+    <img src="https://github.com/the-1Riddle/EmpowerH/assets/125451537/4e3ca369-3649-4bdf-8af2-bab7847a11ad" height="100px" />
   </a>
 
-  <h3 align="center">EmpowerHer</h3>
+  <h3 align="center">EmpowerH</h3>
 
   <p align="center">
-    Webstack - Portfolio Project: EmpowerHer
+    Webstack - Portfolio Project: EmpowerH
     <br />
-    <a href="https://github.com/the-1Riddle/EmpowerHer"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/the-1Riddle/EmpowerH"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/the-1Riddle/EmpowerHer">View Demo</a>
+    <a href="https://github.com/the-1Riddle/EmpowerH">View Demo</a>
     ·
-    <a href="https://github.com/the-1Riddle/EmpowerHer/issues">Report Bug</a>
+    <a href="https://github.com/the-1Riddle/EmpowerH/issues">Report Bug</a>
     ·
-    <a href="https://github.com/the-1Riddle/EmpowerHer/discussions">Request Feature</a>
+    <a href="https://github.com/the-1Riddle/EmpowerH/discussions">Request Feature</a>
   </p>
 </div>
 
 ## Introduction
 
-Welcome to EmpowerHer, a comprehensive web platform dedicated to addressing gender-based violence against women and promoting women's wellness. 
+Welcome to EmpowerH, a comprehensive web platform dedicated to addressing gender-based violence against women and promoting women's wellness. 
 This project is the result of collaborative efforts by a team of passionate developers committed to leveraging technology for social good
 
 
 ## Project Overview
 
-EmpowerHer provides a robust platform where women can connect, share experiences, and engage in discussions on crucial topics. The platform features a Women's Wellness Hub that offers health tips and reminders, encouraging users to adopt healthy lifestyles. Key thematic areas include:
+EmpowerH provides a robust platform where women can connect, share experiences, and engage in discussions on crucial topics. The platform features a Women's Wellness Hub that offers health tips and reminders, encouraging users to adopt healthy lifestyles. Key thematic areas include:
 
 1. Gender-Based Violence Awareness: Educational resources and awareness campaigns aimed at combating gender-based violence.
 
@@ -84,8 +84,8 @@ Chat Platform: Facilitates real-time communication between users through a secur
 
 This project was made possible by the contributions of:
 
-<a href="https://github.com/the-1Riddle/EmpowerHer/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=the-1Riddle/EmpowerHer" />
+<a href="https://github.com/the-1Riddle/EmpowerH/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=the-1Riddle/EmpowerH" />
   
 </a>
 
