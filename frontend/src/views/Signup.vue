@@ -6,49 +6,49 @@
 		
 		<section class="menu section bd-container">
 			<form class="row g-3 needs-validation" @submit.prevent="submit" id="sign-up" novalidate>
-			<h1 class="font-semibold text-4xl mb-4">Sign up</h1>
+			<h1 class="font-semibold text-4xl mb-4">{{ t('auth.signup') }}</h1>
 			<p class="text-base mb-4 leading-5">
-			  Have an account?
-			  <router-link :to="{ name: 'login' }" class="font-semibold text-primary">Login</router-link>
+			  {{ t('auth.haveAccount') }}
+			  <router-link :to="{ name: 'login' }" class="font-semibold text-primary">{{ t('auth.login') }}</router-link>
 			</p>
 			<div class="col-md-4">
-			<label for="validationCustom01" class="form-label">First name</label>
+			<label for="validationCustom01" class="form-label">{{ t('auth.firstName') }}</label>
 			<input v-model="formData.first_name" type="text" class="form-control" id="validationCustom01 firstName" required>
 			<div class="valid-feedback">
-			Looks good!
+			{{ t('auth.looksGood') }}
 			</div>
 			</div>
 			<div class="col-md-4">
-			<label for="validationCustom02" class="form-label">Last name</label>
+			<label for="validationCustom02" class="form-label">{{ t('auth.lastName') }}</label>
 			<input v-model="formData.last_name" type="text" class="form-control" id="validationCustom02 lastName" required>
 			<div class="valid-feedback">
-			Looks good!
+			{{ t('auth.looksGood') }}
 			</div>
 			</div>
 			<div class="col-md-4">
-			<label for="validationCustomUsername" class="form-label">Username</label>
+			<label for="validationCustomUsername" class="form-label">{{ t('auth.username') }}</label>
 			<div class="input-group has-validation">
 			<span class="input-group-text" id="inputGroupPrepend">@</span>
 			<input v-model="formData.user_name" type="text" class="form-control" id="validationCustomUsername userName" aria-describedby="inputGroupPrepend" required>
 			<div class="invalid-feedback">
-			Please choose a username.
+			{{ t('auth.chooseUsername') }}
 			</div>
 			</div>
 			</div>
 			<div class="col-md-6">
-			<label for="validationCustom03" class="form-label">Phone Number</label>
+			<label for="validationCustom03" class="form-label">{{ t('auth.phoneNumber') }}</label>
 			<input v-model="formData.phone_number" type="tel" class="form-control" id="phoneNumber" required>
 			<div class="invalid-feedback">
-			Please provide a valid number.
+			{{ t('auth.provideValid') }} {{ t('auth.phoneNumber').toLowerCase() }}.
 			</div>
 			</div>
 			<div class="col-md-3">
-			<label for="validationCustom04" class="form-label">Gender</label>
+			<label for="validationCustom04" class="form-label">{{ t('auth.gender') }}</label>
 			<select v-model="formData.gender" class="form-select" id="validationCustom04 gender" required>
-			<option selected disabled value="">Choose...</option>
-			<option value="male">Male</option>
-			<option value="female">Female</option>
-			<option value="other">Other</option>
+			<option selected disabled value="">{{ t('auth.choose') }}</option>
+			<option value="male">{{ t('auth.male') }}</option>
+			<option value="female">{{ t('auth.female') }}</option>
+			<option value="other">{{ t('auth.other') }}</option>
 			</select>
 			<div class="invalid-feedback">
 			Please select a valid state.
@@ -63,29 +63,29 @@
 			</div>
 			<div class="col-12">
 			<div class="row mb-3">
-			    <label for="phoneNumber" class="col-sm-2 col-form-label">Email</label>
+			    <label for="phoneNumber" class="col-sm-2 col-form-label">{{ t('auth.email') }}</label>
 			    <div class="col-sm-10">
 					<input v-model="formData.user_email" type="email" class="form-control" id="validationCustom03 email" required>
 					<div class="invalid-feedback">
-					Please provide a valid email.
+					{{ t('auth.provideValid') }} {{ t('auth.email').toLowerCase() }}.
 					</div>
 			    </div>
 			</div>
 			<div class="row mb-3">
-			    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+			    <label for="inputPassword3" class="col-sm-2 col-form-label">{{ t('auth.password') }}</label>
 			    <div class="col-sm-10">
 					<input v-model="formData.user_password" type="password" class="form-control" id="inputPassword3 password" required>
 					<div class="invalid-feedback">
-					Please provide a strong password.
+					{{ t('auth.provideValid') }} {{ t('auth.password').toLowerCase() }}.
 					</div>
 			    </div>
 			</div>
 			<div class="row mb-3">
-				<label for="inputPassword3" class="col-sm-2 col-form-label">Confirm Password</label>
+				<label for="inputPassword3" class="col-sm-2 col-form-label">{{ t('auth.confirmPassword') }}</label>
 			    <div class="col-sm-10">
 					<input v-model="formData.repeatPassword" type="password" class="form-control" id="inputPassword3 repeatPassword" required>
 					<div class="invalid-feedback">
-					Password miss match!
+					{{ t('auth.provideValid') }} {{ t('auth.password').toLowerCase() }}.
 					</div>
 			    </div>
 			</div>
@@ -94,15 +94,15 @@
 			<div class="form-check">
 			<input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
 			<label class="form-check-label" for="invalidCheck">
-			Agree to <a href="/TermsAndConditions">Terms and Conditions</a>
+			{{ t('auth.agreeTerms') }}
 			</label>
 			<div class="invalid-feedback">
-			You must agree before submitting.
+			{{ t('auth.mustAgree') }}
 			</div>
 			</div>
 			</div>
 			<div class="col-12">
-			<button class="w-full btn btn-primary" type="submit">Submit form</button>
+			<button class="w-full btn btn-primary" type="submit">{{ t('common.submit') }}</button>
 			</div>
 			</form>
 		</section>
@@ -115,6 +115,7 @@
 <script>
 import { reactive } from 'vue';
 import { useRouter } from 'vue-router';
+import { useI18n } from 'vue-i18n';
 import api from '../api';
 
 const passwordRules = [
@@ -128,6 +129,7 @@ const passwordRules = [
 export default {
   setup() {
     const router = useRouter();
+    const { t } = useI18n();
 
     const formData = reactive({
       user_name: '',
@@ -189,6 +191,7 @@ export default {
       formData,
       passwordRules,
       submit,
+      t,
     };
   },
 };

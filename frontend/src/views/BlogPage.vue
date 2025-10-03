@@ -41,7 +41,7 @@
                         <div class="comment-list">
                           <div v-for="comment in comments" :key="comment.id" class="single-comment-body">
                             <div class="comment-user-avater">
-                              <img src="../../assets/img/user-image.svg" alt="User Avatar" style="width: 50px;">
+                              <img src="../assets/img/user-image.svg" alt="User Avatar" style="width: 50px;">
                             </div>
                             <div class="comment-text-body">
                               <h4>{{ fetchUserByEmail(comment.user_email).user_name }} &emsp;<span class="comment-date">{{ formatDate(post.created_at) }}</span></h4>

@@ -1,11 +1,17 @@
 <script setup>
-  import { RouterLink, RouterView } from 'vue-router'
+  import { RouterLink, RouterView, useRoute } from 'vue-router'
+  import { computed } from 'vue'
   import Header from './components/Header.vue'
   import Footer from './components/Footer.vue'
+
+  const route = useRoute()
+  const showHeaderFooter = computed(() => {
+    return !['login', 'signup'].includes(route.name)
+  })
 </script>
 
 <template>
-  <header>
+  <header v-if="showHeaderFooter">
     <Header msg="You did it!" />
   </header>
 
@@ -13,7 +19,7 @@
     <RouterView />
   </body>
 
-  <footer>
+  <footer v-if="showHeaderFooter">
     <Footer msg="You did it!" />
   </footer>
 </template>

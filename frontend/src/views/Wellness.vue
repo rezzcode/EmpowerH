@@ -5,7 +5,7 @@
         <section class="services section bd-container" id="services">
             <div style="text-align: center;">
                 <div class="home__data">
-                    <h1 class="home__title">EmpowerHer Blog</h1>
+                    <h1 class="home__title">EmpowerH Blog</h1>
                 </div>
             </div>
             <br>
@@ -43,7 +43,7 @@
                     <a href="#" class="button">Explore history</a>
                 </div>
 
-                <img src="../assets/img/about.jpg" alt="" class="about__img">
+                <img src="../assets/img/illustrations/about.png" alt="" class="about__img">
             </div>
         </section>
         <!---- Popular Post End ---->

@@ -1,34 +1,58 @@
 @import './base.css';
 
-/************* Aticle About ******************
+/************* Modern Card Styles ******************/
+.post-card {
+  background: var(--container-color);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
 
+.post-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(255, 107, 0, 0.2);
+}
 
-************* Aticle About End ******************/
+/************* Card Styles End ******************/
 
 /** More on blog posts **/
   .post-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
   }
   .post-image {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    transition: transform 0.3s ease;
+  }
+  .post-card:hover .post-image {
+    transform: scale(1.05);
   }
   .post-content {
     padding: 20px;
   }
   .post-content h3 {
     margin: 0 0 10px;
-    color: lightseagreen;
+    color: var(--title-color);
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  .post-card:hover .post-content h3 {
+    color: var(--first-color);
   }
   .post-meta {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
+    gap: 10px;
   }
   .post-meta .author,
   .post-meta .date {
@@ -37,16 +61,23 @@
   }
   .post-content p {
     margin: 0 0 10px;
-    color: var(--title-color);
+    color: var(--text-color);
+    line-height: 1.6;
   }
   .read-more {
-    color: #007bff;
+    color: var(--first-color);
     text-decoration: none;
     cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
   }
   .orange-green-text,
   .read-more:hover {
-    color: var(--first-color);
+    color: var(--first-color-alt);
+    gap: 8px;
   }
 /** More on blog posts End **/
 
@@ -142,13 +173,19 @@
       --header-height: 3rem;
 
       /*-------- Colors --------*/
-      --first-color: #069C54;
-      --first-color-alt: #048654;
-      --title-color: #393939;
-      --text-color: #707070;
+      --first-color: #ff6b00;
+      --first-color-alt: #e65f00;
+      --second-color: #8a2be2;
+      --title-color: #1a1a1a;
+      --text-color: #4a4a4a;
       --text-color-light: #A6A6A6;
       --body-color: #FBFEFD;
       --container-color: #FFFFFF;
+      --gradient-primary: linear-gradient(135deg, #ff6b00, #8a2be2);
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+      --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
+      --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.15);
+      --border-radius: 12px;
 
       /*-------- Font and typography --------*/
       --body-font: 'Poppins', sans-serif;
@@ -224,6 +261,8 @@
       background-color: var(--body-color);
       color: var(--text-color);
       line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
 
     h1,h2,h3,p,ul{
@@ -464,13 +503,58 @@
       display: inline-block;
       background-color: var(--first-color);
       color: #FFF;
-      padding: .75rem 1rem;
-      border-radius: .5rem;
-      transition: .3s;
+      padding: .75rem 1.5rem;
+      border-radius: 50px;
+      transition: all .3s ease;
+      font-weight: 500;
+      border: none;
+      cursor: pointer;
     }
 
     .button:hover{
       background-color: var(--first-color-alt);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .button-gradient{
+      background: var(--gradient-primary);
+      border: none;
+    }
+
+    .button-gradient:hover{
+      opacity: 0.9;
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    /*-------- BOOTSTRAP BUTTON OVERRIDES --------*/
+    .btn-primary {
+      background-color: var(--first-color) !important;
+      border-color: var(--first-color) !important;
+      color: #FFF !important;
+    }
+
+    .btn-primary:hover,
+    .btn-primary:focus,
+    .btn-primary:active {
+      background-color: var(--first-color-alt) !important;
+      border-color: var(--first-color-alt) !important;
+      color: #FFF !important;
+    }
+
+    .btn-outline-primary {
+      color: var(--first-color) !important;
+      border-color: var(--first-color) !important;
+      background-color: transparent !important;
+    }
+
+    .btn-outline-primary:hover,
+    .btn-outline-primary:focus,
+    .btn-outline-primary:active {
+      background-color: var(--first-color) !important;
+      border-color: var(--first-color) !important;
+      color: #FFF !important;
     }
 
     /*-------- ABOUT --------*/
@@ -604,7 +688,7 @@
 
     /*-------- FOOTER --------*/
     .footer-area {
-      padding: 70px 0;
+      padding: 4rem 0;
     }
     .footer-box span {
       background-color: var(--first-color);

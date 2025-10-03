@@ -15,6 +15,7 @@ import Contact from '../views/Contact.vue';
 import Forum from '../views/Forum.vue';
 import ForumPage from '../views/ForumPage.vue';
 import Events from '../views/Events.vue';
+import Community from '../views/Community.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -35,6 +36,7 @@ const router = createRouter({
     { path: '/forum', name: 'forum', component: Forum },
     { path: '/forumpage', name: 'forumpage', component: ForumPage },
     { path: '/events', name: 'events', component: Events },
+    { path: '/community', name: 'community', component: Community },
   ]
 })
 

@@ -1,55 +1,60 @@
 <script setup>
+import LanguageSwitcher from './LanguageSwitcher.vue'
+import { useI18n } from 'vue-i18n'
+
 defineProps({
   msg: {
     type: String,
     required: true
   }
 })
+
+const { t } = useI18n()
 </script>
 
 <template>
   <header class="l-header" id="header">
     <nav class="nav bd-container">
-      <a href="/" class="nav__logo">EmpowerHer</a>
+      <a href="/" class="nav__logo">{{ t('nav.logo') }}</a>
 
       <div class="nav__menu nav-center" id="nav-menu">
         <ul class="nav__list">
-          <li class="nav__item dropdown dropdown-toggle"><a href="#" class="nav__link active-link">Platform</a>
+          <li class="nav__item dropdown dropdown-toggle"><a href="#" class="nav__link active-link">{{ t('nav.platform') }}</a>
             <div class="dropdown-content">
               <div class="dropdown-column">
-                <h4>PAGES</h4>
-                <a href="/About">About Us</a>
-                <a href="/Contact">Contact Us</a>
-                <a href="/PrivacyPolicy">Privacy Policy</a>
-                <a href="/terms-and-conditions">Terms & Conditions</a>
+                <h4>{{ t('nav.pages') }}</h4>
+                <a href="/About">{{ t('nav.about') }}</a>
+                <a href="/Contact">{{ t('nav.contact') }}</a>
+                <a href="/privacy-policy">{{ t('nav.privacyPolicy') }}</a>
+                <a href="/terms-and-conditions">{{ t('nav.termsConditions') }}</a>
               </div>
             </div>
           </li>
-          <li class="nav__item dropdown dropdown-toggle"><a href="#" class="nav__link">Partners</a>
+          <li class="nav__item dropdown dropdown-toggle"><a href="#" class="nav__link">{{ t('nav.partners') }}</a>
             <div class="dropdown-content">
               <div class="dropdown-column">
-                <h4>PARTNERS</h4>
-                <a href="/BecomePartner">Become A Partner</a>
-                <a href="/PartnerPrograms">Partner Our Programs</a>
+                <h4>{{ t('nav.partnersTitle') }}</h4>
+                <a href="/BecomePartner">{{ t('nav.becomePartner') }}</a>
+                <a href="/PartnerPrograms">{{ t('nav.partnerPrograms') }}</a>
               </div>
             </div>
           </li>
           <li class="nav__item dropdown dropdown-toggle">
-            <a href="#" class="nav__link">Resources</a>
+            <a href="#" class="nav__link">{{ t('nav.resources') }}</a>
             <div class="dropdown-content">
               <div class="dropdown-column">
-                <h4>RESOURCES</h4>
-                <a href="/Blog">Blog</a>
-                <a href="/Events">Events</a>
-                <a href="#">Demo</a>
-                <a href="#">Products</a>
+                <h4>{{ t('nav.resourcesTitle') }}</h4>
+                <a href="/Blog">{{ t('nav.blog') }}</a>
+                <a href="/Events">{{ t('nav.events') }}</a>
+                <a href="#">{{ t('nav.demo') }}</a>
+                <a href="#">{{ t('nav.products') }}</a>
               </div>
               <div class="dropdown-column">
-                <h4>Community</h4>
-                <a href="#">Join Community</a>
-                <a href="#">Contribute</a>
-                <a href="/Forum">Forum</a>
-                <a href="#">Chat</a>
+                <h4>{{ t('nav.community') }}</h4>
+                <a href="/community">{{ t('nav.joinCommunity') }}</a>
+                <a href="#">{{ t('nav.contribute') }}</a>
+                <a href="/Forum">{{ t('nav.forum') }}</a>
+                <a href="#">{{ t('nav.chat') }}</a>
               </div>
             </div>
           </li>
@@ -61,7 +66,7 @@ defineProps({
             Notifications
           </a>
         </li>
-        <!--li class="nav__item"><a href="/Login" class="nav__link">Login</a></li-->
+        <!--li class="nav__item"><a href="/Login" class="nav__link">{{ t('nav.login') }}</a></li-->
         <li class="nav__item nav_right dropdown dropdown-toggle"><a href="/Account" class="nav__link">Account</a>
           <div class="dropdown-content">
             <div class="dropdown-column">
@@ -73,6 +78,7 @@ defineProps({
             </div>
           </div>
         </li>
+        <!--li class="nav__item"><LanguageSwitcher /></li-->
         <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
       </ul>
     </div>

@@ -5,7 +5,7 @@
         <section class="section bd-container">
             <div style="text-align: center;">
                 <div class="home__data">
-                    <h1 class="home__title">EmpowerHer Forum</h1>
+                    <h1 class="home__title">EmpowerH Forum</h1>
                 </div>
             </div>
             <br>
@@ -48,7 +48,7 @@
                 <div class="card mb-3" style="max-width: 540px;">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="..." class="img-fluid rounded-start" alt="...">
+                            <img  src="../assets/img/home.jpg" class="img-fluid rounded-start" alt="...">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
@@ -63,7 +63,7 @@
                 <div class="card mb-3" style="max-width: 540px;">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="..." class="img-fluid rounded-start" alt="...">
+                            <img  src="../assets/img/home.jpg" class="img-fluid rounded-start" alt="...">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
@@ -78,7 +78,7 @@
                 <div class="card mb-3" style="max-width: 540px;">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="..." class="img-fluid rounded-start" alt="...">
+                            <img  src="../assets/img/home.jpg" class="img-fluid rounded-start" alt="...">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">

@@ -5,7 +5,7 @@
         <section class="services section bd-container" id="services">
             <div style="text-align: center;">
                 <div class="home__data">
-                    <h1 class="home__title">EmpowerHer Blog</h1>
+                    <h1 class="home__title">EmpowerH Blog</h1>
                 </div>
             </div>
             <br>
@@ -42,7 +42,7 @@
                     <a href="#" class="button">Explore history</a>
                 </div>
 
-                <img src="./Untitled1.jpg" alt="" class="about__img">
+                <img src="../assets/img/home.jpg" alt="" class="about__img">
             </div>
         </section>
         <!---- Popular Post End ---->
@@ -115,7 +115,7 @@
         <section class="menu section1 bd-container" id="Wellness">
             <div class="post-list menu__container bd-grid">
                 <div v-for="post in paginatedPosts" :key="post.id" class="post-card">
-                    <img src="./Untitled1.jpg" alt="Post image" class="post-image"/>
+                    <img src="../assets/img/home.jpg" alt="Post image" class="post-image"/>
                     <div class="post-content">
                         <h3>Post title </h3>
                         <div class="post-meta">
@@ -128,7 +128,7 @@
                 </div>
 
                 <div v-for="post in paginatedPosts" :key="post.id" class="post-card">
-                    <img src="./Untitled1.jpg" alt="Post image" class="post-image"/>
+                    <img src="../assets/img/home.jpg" alt="Post image" class="post-image"/>
                     <div class="post-content">
                         <h3>Post title </h3>
                         <div class="post-meta">
@@ -142,7 +142,7 @@
                 </div>
 
                 <div v-for="post in paginatedPosts" :key="post.id" class="post-card">
-                    <img src="./Untitled1.jpg" alt="Post image" class="post-image"/>
+                    <img src="../assets/img/home.jpg" alt="Post image" class="post-image"/>
                     <div class="post-content">
                         <h3>Post title </h3>
                         <div class="post-meta">
@@ -154,7 +154,7 @@
                     </div>
                 </div>
                 <div v-for="post in paginatedPosts" :key="post.id" class="post-card">
-                    <img src="./Untitled1.jpg" alt="Post image" class="post-image"/>
+                    <img src="../assets/img/home.jpg" alt="Post image" class="post-image"/>
                     <div class="post-content">
                         <h3>Post title </h3>
                         <div class="post-meta">
@@ -167,7 +167,7 @@
                 </div>
 
                 <div v-for="post in paginatedPosts" :key="post.id" class="post-card">
-                    <img src="./Untitled1.jpg" alt="Post image" class="post-image"/>
+                    <img src="../assets/img/home.jpg" alt="Post image" class="post-image"/>
                     <div class="post-content">
                         <h3>Post title </h3>
                         <div class="post-meta">
@@ -181,7 +181,7 @@
                 </div>
 
                 <div v-for="post in paginatedPosts" :key="post.id" class="post-card">
-                    <img src="./Untitled1.jpg" alt="Post image" class="post-image"/>
+                    <img src="../assets/img/home.jpg" alt="Post image" class="post-image"/>
                     <div class="post-content">
                         <h3>Post title </h3>
                         <div class="post-meta">

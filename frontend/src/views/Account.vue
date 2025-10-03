@@ -4,7 +4,7 @@
 			<div class="col-md-3">
 				<div class="leftbar">
 					<div class="user-details">
-						<img src="../../assets/img/user-image.svg" class="img-fluid rounded-circle" alt="Profile Image">
+						<img src="../assets/img/user-image.svg" class="img-fluid rounded-circle" alt="Profile Image">
 						<h4>{{ firstName }} {{ lastName }}</h4>
 						<p>{{ userEmail }}</p>
 					</div>
